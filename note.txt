@@ -1,0 +1,3 @@
+logo bg color:: #b8a47e
+nav font: Montserrat 
+background of second part:: #d5d5d5
