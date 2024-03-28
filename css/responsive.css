@@ -1,3 +1,23 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../Montserrat/static/Montserrat-Regular.ttf')  format('truetype');
+  }
+@font-face {
+font-family: Montserrat-Bold;
+src: url('../Montserrat/static/Montserrat-Bold.ttf')  format('truetype');
+}
+@font-face {
+    font-family: Montserrat-Light;
+    src: url('../Montserrat/static/Montserrat-Light.ttf')  format('truetype');
+    }
+@font-face {
+    font-family: Roboto-Thin;
+    src: url('../Roboto/Roboto-Thin.ttf')  format('truetype');
+    }
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../Roboto/Roboto-Regular.ttf')  format('truetype');
+    }
 @media only screen and (max-width: 995px) {
     .logo {
         width: 150px;
@@ -310,5 +330,182 @@
     #menuToggle input:checked ~ ul
     {
     transform: none;
+    }
+}
+
+
+/* Re-fixing bugs */
+.carousel-control-next, .carousel-control-prev {
+    width: auto !important;
+    left: 5% !important;
+}
+.banner .carousel-indicators {
+    left: 5% !important;
+}
+.carousel-caption h3,
+.voyager_header h2 {
+    font-family: Montserrat-Bold;
+    font-size: 48.5px;
+}
+.carousel-caption span {
+    font-family: Montserrat-Regular;
+    font-size: 21.5px;
+    color: #383838;
+}
+.voyager_header span,
+.tanner_header span {
+    font-family: Montserrat-Regular;
+    font-size: 21.5px;
+}
+.navbar ul li a::before {
+    content: '';
+    width: 40px;
+    border: 1px solid #b8a47e;
+    position: absolute;
+    top: 40%;
+    right: 110%;
+    display: none;
+}
+.navbar ul li a::after {
+    content: '';
+    width: 5px;
+    border: 2px solid #b8a47e;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 110%;
+    display: none;
+}
+.navbar ul li a:hover::before,
+.navbar ul li a:hover::after {
+    display: block;
+}
+
+.tanner01 h4 ,
+.tanner02 h4 ,
+.tanner03 h4 ,
+.tanner04 h4 {
+    font-family: Montserrat-Bold;
+    font-size: 26.86px;
+   color: #383838 !important; 
+}
+.tanner04 h4 {
+    font-size: 60px !important;
+    color: #dcdee0 !important;
+    text-shadow: 5px 10px 15px #dcdee0;
+}
+.foot_menu li a {
+    font-family:  Montserrat-Bold;
+    font-size: 15px;
+    position: relative;
+}
+.foot_menu li a::before {
+    content: '';
+    width: 30px;
+    border: 1px solid #b8a47e;
+    position: absolute;
+    top: 40%;
+    right: 105%;
+    display: none;
+}
+.foot_menu li a::after {
+    content: '';
+    width: 5px;
+    border: 2px solid #b8a47e;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 105%;
+    display: none;
+}
+.foot_menu li a:hover::before,
+.foot_menu li a:hover::after {
+    display: block;
+}
+.address h6 {
+    font-family: Roboto-Regular;
+}
+.address p {
+    font-family: Roboto-Thin;
+}
+.email h6 {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+}
+.email p {
+    font-family: Roboto-Regular;
+    font-size: 12.5px !important;
+}
+.foot_end p {
+    font-family: Roboto-Thin;
+    font-size: 15px;
+}
+.foot_social {
+    justify-content: flex-end !important;
+}
+.foot_social li {
+    margin-left: 30px;
+}
+.foot_social li a {
+    font-family: Montserrat-Light;
+    position: relative;
+}
+.foot_social li a::before {
+    content: '';
+    width: 25px;
+    border: 1px solid #b8a47e;
+    position: absolute;
+    top: 40%;
+    right: 105%;
+    display: none;
+}
+.foot_social li a::after {
+    content: '';
+    width: 5px;
+    border: 2px solid #b8a47e;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 105%;
+    display: none;
+}
+.foot_social li a:hover::before,
+.foot_social li a:hover::after {
+    display: block;
+}
+.foot_social li a:hover {
+    font-family: Montserrat-Bold;
+    color: #000;
+}
+.tanner01 h1, .tanner02 h1, .tanner03 h1, .tanner04 h1 {
+    font-family: Montserrat-Bold;
+    font-size: 60px;
+    color: #969696 !important;
+}
+.gear_up {
+    margin-left: 5%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.gear_up span {
+    font-family: Montserrat-Regular;
+    font-size: 21.5px;
+    color: #b8a47e;
+    padding: 0 10px;
+}
+.voyager_text p {
+    font-family: Montserrat-Regular;
+    font-size: 14.5px;
+    color: #a7a7a7;
+}
+@media only screen and (min-width: 2000px) {
+    .navbar ul li:nth-child(4) a, .navbar ul li:nth-child(5) a {
+        color: #000 !important;
+    }
+}
+@media only screen and (min-width: 1400px){
+    .tanner04 .tanner04_img {
+        bottom: -40px !important;
     }
 }

@@ -1,7 +1,28 @@
 body {
-    font-family: 'Montserrat';font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
 }
 
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../Montserrat/static/Montserrat-Regular.ttf')  format('truetype');
+  }
+@font-face {
+font-family: Montserrat-Bold;
+src: url('../Montserrat/static/Montserrat-Bold.ttf')  format('truetype');
+}
+@font-face {
+    font-family: Montserrat-Light;
+    src: url('../Montserrat/static/Montserrat-Light.ttf')  format('truetype');
+    }
+@font-face {
+    font-family: Roboto-Thin;
+    src: url('../Roboto/Roboto-Thin.ttf')  format('truetype');
+    }
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../Roboto/Roboto-Regular.ttf')  format('truetype');
+    }
 /* Navbar */
 .phone {
     display: none;
@@ -24,7 +45,7 @@ body {
     z-index: 9;
 }
 
-.nav-active {
+/* .nav-active {
     height: 75px;
     background-color:#fff;
     box-shadow: 5px -1px 12px -5px grey;
@@ -36,7 +57,7 @@ body {
 .nav-active .logo {
     background: none;
     bottom: -65px;
-}
+} */
 .navbar ul {
     list-style: none;
     display: flex;
@@ -51,15 +72,17 @@ body {
 .navbar ul li a {
     text-decoration: none;
     color: #000;
-    font-weight: bold;
-    font-size: 16px;
+    font-family: Montserrat-Bold;
+    font-size: 15px;
     margin-right: 15px;
+    position: relative;
+    display: block;
 }
-.navbar ul li a:hover {
+/* .navbar ul li a:hover {
     text-decoration: underline;
     color: #919191;
     text-shadow: 1px 1px #ccc;
-}
+} */
 .navbar ul li:nth-child(4) a,
 .navbar ul li:nth-child(5) a {
     color: #fff;
@@ -72,14 +95,14 @@ body {
     height: 500px;
 }
 .banner_blog img {
-    width: 750px;
+    /* width: 750px;
     position: absolute;
-    right: 0;
+    right: 0; */
 }
 .banner .carousel-caption {
-    right: 50% !important;
-    left: auto !important;
-    bottom: 15.25rem !important;
+    /* right: 50% !important;
+    left: auto !important; */
+    bottom: 25% !important;
     text-align: left !important;
 }
 .banner .carousel-control-prev {
@@ -94,8 +117,8 @@ body {
 }
 .banner .carousel-indicators {
     right: auto !important;
-    bottom: 100px !important;
-    left: 85px !important;
+    bottom: 55px !important;
+    left: 5px !important;
     flex-direction: column;
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -106,7 +129,7 @@ body {
     border: 1px solid #000;
     position: absolute;
     left: 15px;
-    bottom: 105px;
+    bottom: 155px;
 }
 .font-bold {
     font-weight: bold;
@@ -149,6 +172,28 @@ body {
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.banner .carousel-indicators [data-bs-target]:nth-child(4)::after {
+    content: '04';
+}
+.banner .carousel-indicators [data-bs-target].active:nth-child(4)::after {
+    content: '04';
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.banner .carousel-indicators [data-bs-target]:nth-child(5)::after {
+    content: '05';
+}
+.banner .carousel-indicators [data-bs-target].active:nth-child(5)::after {
+    content: '05';
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /* VOYAGER BACKPACK  & DRIFTER*/
 .voyager,
@@ -183,7 +228,7 @@ body {
 }
 .drifter .voyager_header {
     top: 40%;
-    right: 40%;
+    right: 25%;
     text-align: left;
 }
 .drifter .voyager_text {
@@ -206,20 +251,24 @@ body {
 .tanner02 p ,
 .tanner03 p ,
 .tanner04 p {
-    color: #a7a7a7;
-    font-size: 14px;
+    font-family: Roboto-Thin;
+    color: #383838;
+    font-size: 15px;
+    margin-bottom: 0px;
 }
 .tanner_header h1{
+    font-family: Montserrat-Bold;
+    font-size: 60px;
     text-align: center;
-    font-weight: bold;
 }
 .tanner_header span {
     position: relative;
-    background: #b8a47e;
+    background: rgba(184, 164, 126,0.42);
     color: #383838;
     display: inline-block;
     width: 300px;
     margin-left: calc(100% - 300px);
+    padding-left: 5px;
 }
 .tanner_header span::before {
     content: '';
@@ -227,7 +276,7 @@ body {
     border-top: 1px solid #000;
     height: 10px;
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: calc(100% - 380px);
 }
 .lign_01,
@@ -292,9 +341,9 @@ body {
 .tanner02 .underline::after {
     content: '';
     position: absolute;
-    width: 300px;
-    border: 10px solid #b8a47e;
-    left: 133px;
+    width: 70%;
+    border: 10px solid rgba(184, 164, 126,0.42);
+    left: 15%;
     top: 15px;
 }
 
@@ -374,8 +423,13 @@ body {
 .album i {
     opacity: 0;
     position: absolute;
-    left: 40%;
-    top: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: calc(55% - 35px);
     font-size: 35px;
     color: #fff;
 }
@@ -455,16 +509,19 @@ body {
     background: #d5d5d5;
 }
 
-.foot_menu {
+.foot_menu,
+.foot_social {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
+    padding: 0;
 }
-.foot_menu li a {
+.foot_menu li a,
+.foot_social li a {
     text-decoration: none;
     color: #919191;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
 }
 .foot_menu li a:hover {
@@ -477,6 +534,6 @@ body {
 
 .address p ,
 .email p {
-    font-size: 14px;
+    font-size: 15px;
     color: #383838;
 }
