@@ -207,18 +207,24 @@ src: url('../Montserrat/static/Montserrat-Bold.ttf')  format('truetype');
     top: 35%;
     right: 35%;
 }
-.voyager_text {
+/* .voyager_text {
     position: absolute;
     top: 25%;
     right: 90px;
     color: #a7a7a7;
     font-size: 14px;
-}
+} */
 .voyager_borderline {
     position: absolute;
-    width: 530px;
-    top: 17%;
-    right: 35px;
+    width: 60%;
+    top: 13%;
+    right: 5%;
+}
+.voyager_borderline_2 {
+    position: absolute;
+    width: 60%;
+    top: 22%;
+    left: 5%;
 }
 .drifter {
     background: #d5d5d5;
@@ -228,7 +234,7 @@ src: url('../Montserrat/static/Montserrat-Bold.ttf')  format('truetype');
 }
 .drifter .voyager_header {
     top: 40%;
-    right: 25%;
+    right: calc(100% - 945px);
     text-align: left;
 }
 .drifter .voyager_text {

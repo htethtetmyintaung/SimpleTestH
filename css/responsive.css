@@ -33,15 +33,31 @@ src: url('../Montserrat/static/Montserrat-Bold.ttf')  format('truetype');
         justify-content: center;
     }
     .navbar ul li a {
-        color: #000 !important;
+        color: #fff !important;
     }
-    .nav-active .logo  {
+    /* .nav-active .logo  {
         bottom: -40px;
+    } */
+    .banner_blog {
+        height: 100% !important;
     }
-    .banner_blog img {
-        width: 100%;
+    .banner_blog .col-md-8 {
+        width: 100% !important;
     }
-    .banner .carousel-control-next, .banner .carousel-control-prev {
+    .carousel-caption h3,
+    .carousel-caption span {
+        color: #fff !important;
+    }
+    .banner .carousel-indicators::before {
+        display: none;
+    }
+    .carousel-indicators button {
+        color: #fff;
+        font-family: Montserrat-Bold;
+        font-size: 15px;
+    }
+    
+    /* .banner .carousel-control-next, .banner .carousel-control-prev {
         transform: none;
     }
     .banner .carousel-control-prev {
@@ -56,6 +72,12 @@ src: url('../Montserrat/static/Montserrat-Bold.ttf')  format('truetype');
     }
     .banner .carousel-indicators {
         flex-direction: row;
+    } */
+    .gear_up img:first-child {
+        width: 50px;
+    }
+    .drifter .voyager_header {
+        right: 5%;
     }
     .lign_02::before {
         left: 145px;
@@ -95,11 +117,24 @@ src: url('../Montserrat/static/Montserrat-Bold.ttf')  format('truetype');
     .navbar ul {
         margin-left: 0px;
     }
-    .nav-active .logo {
+    /* .nav-active .logo {
         bottom: -20px;
-    }
+    } */
     .banner .carousel-indicators {
-        bottom: 35% !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        bottom: 0% !important;
+    }
+    .carousel-indicators button {
+        color: #fff;
+        font-family: Montserrat-Bold;
+        font-size: 15px;
+        margin: 0px 7px !important;
+    }
+    .banner .carousel-caption {
+        bottom: 10% !important;
     }
     .voyager_header {
         position: static;
@@ -142,11 +177,6 @@ src: url('../Montserrat/static/Montserrat-Bold.ttf')  format('truetype');
     .tanner04 {
         height: auto;
     }
-    .tanner04 .text-align-center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     .tanner04 .tanner04_img {
         position: static;
     }
@@ -169,14 +199,33 @@ src: url('../Montserrat/static/Montserrat-Bold.ttf')  format('truetype');
         text-align: center;
     }
     .foot_menu {
-        display: none;
+        /* display: none; */
+        display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0px;
+}
     }
     .footer div.input-group {
         width: 60% !important;
         margin: 0 auto;
 
     }
-    
+    .banner .carousel-control-next, .banner .carousel-control-prev{
+        display: none;
+    }
+
+    .carousel-caption h3, .voyager_header h2,
+    .tanner_header h1 {
+        font-size: 32px !important;
+    }
+    .voyager_header span, .tanner_header span {
+        font-size: 15.5px !important;
+    }
+    .lign_01 {
+        margin-top: 20px !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -301,7 +350,7 @@ src: url('../Montserrat/static/Montserrat-Bold.ttf')  format('truetype');
     {
     list-style: none;
     position: absolute;
-    width: 50%;
+    width: 85%;
     height: auto;
     box-shadow: 0 0 10px #85888C;
     margin: -50px 0 0 -50px;
@@ -494,10 +543,18 @@ src: url('../Montserrat/static/Montserrat-Bold.ttf')  format('truetype');
     color: #b8a47e;
     padding: 0 10px;
 }
+.voyager_text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .voyager_text p {
     font-family: Montserrat-Regular;
     font-size: 14.5px;
     color: #a7a7a7;
+    margin: 0;
+    text-wrap: wrap;
 }
 @media only screen and (min-width: 2000px) {
     .navbar ul li:nth-child(4) a, .navbar ul li:nth-child(5) a {
@@ -507,5 +564,17 @@ src: url('../Montserrat/static/Montserrat-Bold.ttf')  format('truetype');
 @media only screen and (min-width: 1400px){
     .tanner04 .tanner04_img {
         bottom: -40px !important;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .voyager_borderline_2,
+    .voyager_borderline {
+        display: none;
+    }
+    .gear_up span {
+        font-size: 17px;
+    }
+    .gear_up img:last-child {
+        width: 10px;
     }
 }
