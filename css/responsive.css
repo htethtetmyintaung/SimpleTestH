@@ -205,7 +205,7 @@ src: url('../Montserrat/static/Montserrat-Bold.ttf')  format('truetype');
     justify-content: space-around;
     align-items: center;
     margin: 15px 0px;
-}
+
     }
     .footer div.input-group {
         width: 60% !important;
